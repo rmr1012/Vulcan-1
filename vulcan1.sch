@@ -284,6 +284,35 @@
 <wire x1="1.6" y1="-1.6" x2="1.44" y2="-1.6" width="0.127" layer="21"/>
 <circle x="-1.12" y="-0.96" radius="0.16" width="0.127" layer="21"/>
 </package>
+<package name="ECX-306X">
+<smd name="4" x="-2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
+<smd name="1" x="-2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
+<smd name="3" x="2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
+<smd name="2" x="2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
+<wire x1="-4" y1="2" x2="-4.5" y2="2" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="2" x2="-4.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-2" x2="-4" y2="-2" width="0.127" layer="21"/>
+<wire x1="4" y1="2" x2="4.5" y2="2" width="0.127" layer="21"/>
+<wire x1="4.5" y1="2" x2="4.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-2" x2="4" y2="-2" width="0.127" layer="21"/>
+<circle x="-4" y="-1.5" radius="0.22360625" width="0.127" layer="21"/>
+</package>
+<package name="TDFN-T822-2">
+<smd name="8" x="1.475" y="0.975" dx="0.7" dy="0.35" layer="1"/>
+<smd name="7" x="1.475" y="0.325" dx="0.7" dy="0.35" layer="1"/>
+<smd name="6" x="1.475" y="-0.325" dx="0.7" dy="0.35" layer="1"/>
+<smd name="5" x="1.475" y="-0.975" dx="0.7" dy="0.35" layer="1"/>
+<smd name="1" x="-1.475" y="0.975" dx="0.7" dy="0.35" layer="1"/>
+<smd name="2" x="-1.475" y="0.325" dx="0.7" dy="0.35" layer="1"/>
+<smd name="3" x="-1.475" y="-0.325" dx="0.7" dy="0.35" layer="1"/>
+<smd name="4" x="-1.475" y="-0.975" dx="0.7" dy="0.35" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="1.58" dy="2.35" layer="1"/>
+<wire x1="-2" y1="1.8" x2="-2" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.8" x2="2" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.8" x2="2" y2="1.8" width="0.127" layer="21"/>
+<wire x1="2" y1="1.8" x2="-2" y2="1.8" width="0.127" layer="21"/>
+<circle x="-1.7" y="1.5" radius="0.14141875" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F103XX-48PIN">
@@ -444,6 +473,35 @@
 <wire x1="15.24" y1="-7.62" x2="15.494" y2="-7.62" width="0.254" layer="94"/>
 <text x="-2.54" y="-15.24" size="1.4224" layer="94">AD8494ARMZ</text>
 </symbol>
+<symbol name="XTAL">
+<wire x1="-0.508" y1="1.016" x2="-0.508" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.016" x2="0.508" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-1.016" x2="0.508" y2="1.016" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.016" x2="-0.508" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<pin name="P$1" x="-2.54" y="0" visible="off" length="point"/>
+<pin name="P$2" x="2.54" y="0" visible="off" length="point"/>
+</symbol>
+<symbol name="TDFN-T822-2">
+<pin name="SCLK" x="-12.7" y="7.62" length="middle"/>
+<pin name="CS" x="-12.7" y="5.08" length="middle"/>
+<pin name="DOUT" x="-12.7" y="2.54" length="middle"/>
+<pin name="DIN" x="-12.7" y="0" length="middle"/>
+<pin name="GND" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="VCC" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="X1" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="X2" x="15.24" y="2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<text x="-7.62" y="-7.62" size="1.4224" layer="94">DS1347</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F103XX-48PIN">
@@ -598,6 +656,44 @@
 <connect gate="G$1" pin="SENSE" pad="5"/>
 <connect gate="G$1" pin="V+" pad="7"/>
 <connect gate="G$1" pin="V-" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ECX-306X">
+<gates>
+<gate name="G$1" symbol="XTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ECX-306X">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS1347">
+<gates>
+<gate name="G$1" symbol="TDFN-T822-2" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="TDFN-T822-2">
+<connects>
+<connect gate="G$1" pin="CS" pad="5"/>
+<connect gate="G$1" pin="DIN" pad="3"/>
+<connect gate="G$1" pin="DOUT" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCLK" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="6"/>
+<connect gate="G$1" pin="X1" pad="8"/>
+<connect gate="G$1" pin="X2" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8304,6 +8400,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="U$5" library="vulcan-1" deviceset="ASPI-0520LR" device=""/>
 <part name="U$6" library="vulcan-1" deviceset="ASPI-0520LR" device=""/>
 <part name="U$7" library="vulcan-1" deviceset="AD8494ARMZ" device=""/>
+<part name="U$8" library="vulcan-1" deviceset="ECX-306X" device="" value="32.768khz"/>
+<part name="U$9" library="vulcan-1" deviceset="DS1347" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8324,6 +8422,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="U$5" gate="G$1" x="-127" y="63.5"/>
 <instance part="U$6" gate="G$1" x="-127" y="109.22"/>
 <instance part="U$7" gate="G$1" x="-7.62" y="101.6"/>
+<instance part="U$8" gate="G$1" x="124.46" y="-25.4" rot="R90"/>
+<instance part="U$9" gate="G$1" x="104.14" y="-30.48"/>
 </instances>
 <busses>
 </busses>
@@ -8405,6 +8505,21 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="-121.92" y1="109.22" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="L2"/>
 <wire x1="-111.76" y1="109.22" x2="-111.76" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="P$1"/>
+<pinref part="U$9" gate="G$1" pin="X2"/>
+<wire x1="124.46" y1="-27.94" x2="119.38" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="P$2"/>
+<wire x1="124.46" y1="-22.86" x2="119.38" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="X1"/>
+<wire x1="119.38" y1="-22.86" x2="119.38" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
