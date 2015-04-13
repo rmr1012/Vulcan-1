@@ -12814,7 +12814,10 @@ grid 2.54 mm</description>
 <label x="137.16" y="7.62" size="1.778" layer="95"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="139.7" y1="7.62" x2="149.86" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="7.62" x2="149.86" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="7.62" x2="149.86" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="OUT"/>
+<wire x1="149.86" y1="5.08" x2="149.86" y2="2.54" width="0.1524" layer="91"/>
+<junction x="149.86" y="5.08"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="5"/>
