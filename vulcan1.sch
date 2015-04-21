@@ -373,8 +373,8 @@
 <pin name="PA13" x="20.32" y="-7.62" length="middle" rot="R180"/>
 <pin name="PA12" x="20.32" y="-5.08" length="middle" rot="R180"/>
 <pin name="PA11" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="PA14" x="20.32" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="PA15" x="20.32" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="PA14" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="PA15" x="20.32" y="-12.7" length="middle" rot="R180"/>
 <pin name="PB8" x="20.32" y="-38.1" length="middle" rot="R180"/>
 <pin name="PB9" x="20.32" y="-40.64" length="middle" rot="R180"/>
 <pin name="PB10" x="20.32" y="-43.18" length="middle" rot="R180"/>
@@ -12619,7 +12619,7 @@ grid 2.54 mm</description>
 <instance part="C14" gate="G$1" x="-96.52" y="96.52"/>
 <instance part="C15" gate="G$1" x="-93.98" y="30.48"/>
 <instance part="JP3" gate="A" x="60.96" y="40.64"/>
-<instance part="GND20" gate="1" x="53.34" y="30.48"/>
+<instance part="GND20" gate="1" x="53.34" y="33.02"/>
 <instance part="U$1" gate="G$1" x="144.78" y="5.08"/>
 </instances>
 <busses>
@@ -12637,10 +12637,8 @@ grid 2.54 mm</description>
 <wire x1="-53.34" y1="43.18" x2="-45.72" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="43.18" x2="-38.1" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="43.18" x2="-20.32" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="43.18" x2="-20.32" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-20.32" y="43.18"/>
 <pinref part="U$3" gate="G$1" pin="VSS_1"/>
-<wire x1="-20.32" y1="45.72" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
 <junction x="-20.32" y="45.72"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <junction x="-38.1" y="43.18"/>
@@ -12648,6 +12646,8 @@ grid 2.54 mm</description>
 <junction x="-45.72" y="43.18"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 <junction x="-53.34" y="43.18"/>
+<wire x1="-20.32" y1="45.72" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="43.18" x2="-20.32" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -12852,7 +12852,7 @@ grid 2.54 mm</description>
 <segment>
 <pinref part="JP3" gate="A" pin="3"/>
 <wire x1="58.42" y1="38.1" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="38.1" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="38.1" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -12975,9 +12975,7 @@ grid 2.54 mm</description>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VDD_3"/>
 <pinref part="U$3" gate="G$1" pin="VDD_2"/>
-<wire x1="-20.32" y1="53.34" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="VDD_1"/>
-<wire x1="-20.32" y1="58.42" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-20.32" y="55.88"/>
 <wire x1="-20.32" y1="53.34" x2="-20.32" y2="50.8" width="0.1524" layer="91"/>
 <junction x="-20.32" y="53.34"/>
@@ -12993,6 +12991,8 @@ grid 2.54 mm</description>
 <wire x1="-53.34" y1="50.8" x2="-60.96" y2="50.8" width="0.1524" layer="91"/>
 <junction x="-53.34" y="50.8"/>
 <label x="-60.96" y="50.8" size="1.778" layer="95"/>
+<wire x1="-20.32" y1="53.34" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="55.88" x2="-20.32" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="1"/>
@@ -13398,6 +13398,11 @@ grid 2.54 mm</description>
 <label x="177.8" y="63.5" size="1.778" layer="95"/>
 <pinref part="JP1" gate="G$1" pin="6"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="PA15"/>
+<wire x1="22.86" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
+<label x="38.1" y="27.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RTC-CS" class="0">
 <segment>
@@ -13499,6 +13504,11 @@ grid 2.54 mm</description>
 <pinref part="JP1" gate="G$1" pin="4"/>
 <wire x1="198.12" y1="68.58" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
 <label x="177.8" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="PA14"/>
+<wire x1="22.86" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
+<label x="38.1" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ACC-CS" class="0">
