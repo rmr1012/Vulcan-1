@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13461,6 +13461,11 @@ grid 2.54 mm</description>
 <wire x1="-7.62" y1="129.54" x2="-20.32" y2="129.54" width="0.1524" layer="91"/>
 <label x="-20.32" y="129.54" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="PB6"/>
+<wire x1="22.86" y1="7.62" x2="43.18" y2="7.62" width="0.1524" layer="91"/>
+<label x="38.1" y="7.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$16" class="0">
 <segment>
@@ -13477,6 +13482,11 @@ grid 2.54 mm</description>
 <pinref part="T1" gate="G1" pin="B"/>
 <wire x1="27.94" y1="129.54" x2="15.24" y2="129.54" width="0.1524" layer="91"/>
 <label x="15.24" y="129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="PB7"/>
+<wire x1="22.86" y1="5.08" x2="43.18" y2="5.08" width="0.1524" layer="91"/>
+<label x="38.1" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VBAT-F" class="0">
@@ -13552,6 +13562,11 @@ grid 2.54 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,180.34,-12.7,XBEE,RESET,,,,"/>
+<approved hash="202,1,180.34,-22.86,XBEE,DTR/DI8,,,,"/>
+<approved hash="202,1,228.6,-17.78,XBEE,VREF,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
